@@ -17,7 +17,7 @@ public class PesquisaOpiniaoCinema {
         
         Scanner leitor = new Scanner(System.in);
         
-        while (cont < 4) {
+        while (cont < 10) {
         System.out.print("Digite sua idade: ");
         idade = leitor.nextInt();
         System.out.print("Digite a letra referente a sua opinião sobre o filme\na-Ótimo, b-Bom, c-Regular, d-Ruim, e-Péssimo: ");
@@ -34,7 +34,7 @@ public class PesquisaOpiniaoCinema {
                    break;
                case 'e':
                    pessimo++;
-                   porcentagem=(pessimo*100)/4;
+                   porcentagem=(pessimo*100)/10;
                default:
                    break;
             } cont++;
